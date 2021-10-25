@@ -1,6 +1,7 @@
 # AutoLabelMe
 AutoLabelme is an open-source automatic image annotator created using the Tkinter library in Python. It's an extension of LabelMe, the open-source Image Annotator available in Github LabelMe. It matches the template provided by the user in an image and find same objects associating a bounding box and label for every object. Autolabelme uses Normalized Cross-Correlation to check whether two templates are similar. It is designed keeping in mind with the necessity of creating dataset for object detection purposes and currently can only find objects in the cropped image i.e the search space to find same object is the space around the current template.
 
+
 # How to Run?
 1. Open `Terminal` and run `git clone https://github.com/SadilKhan/AutoLabelMe.git`.
 2. Install labelme. Check [here](https://github.com/wkentaro/labelme) for more details.
@@ -44,4 +45,3 @@ AutoLabelme is an open-source automatic image annotator created using the Tkinte
 ## The Other Py files
 1. `templatematcher.py` --> Matches templates for specified labels or all the labels. Requires JSON file created using Labelme.
 2. `templatesaver.py`--> Saves the matched images.
-
